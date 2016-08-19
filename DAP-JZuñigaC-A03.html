@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<!---Jessica Zuñiga A00513620-->
+<head>
+	<!-- Caracteres Internazionales (Acentos)-->
+<meta charset="utf-8">
+	<!-- Haciendo el Documento Responsivo -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<style type="text/css"> 
+
+body {
+    background-color: DarkSalmon ;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+   <--- font-family: arial; ---!>
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+     font-family: arial;
+}
+p {
+    font-family: Georgia;
+    font-size: 20px;
+     text-align: center;
+}
+
+
+
+</style>
+</head>
+<!---Jessica Zuñiga A00513620-->
+<body>
+<h1>Solicitud de Empleo</h2>
+<form method = "post" action= "itesm.mx">
+<p>
+	<label text-align: rigth;> Fecha: <input name= "fecha" type= "date" size="30"> </label> <br/>
+	<label>Puesto que solicita y turno de su interés: <input name= "pyt" type="text" size="30">
+	</label> <br/>
+	<label>Sueldo: <input name="sueldo" type="text" size="10" maxlength="10"></label>
+</p>
+<h2>Datos Personales</h2>
+<p>
+	<label>Apellidos Paterno: <input type="text" name="aPaterno" size="25" maxlength="30"> </label>
+	<label>Materno: <input type="text" name="aMaterno" size="25" maxlength="30"> </label>
+	<label>Nombres: <input type="text" name="nombres" size="25" maxlength="30"> </label> <br/>
+	<label>Edad: <input type="number" name="edad" size="2" maxlength="2"> </label> 
+	<label>Estatura: <input type="number" name="estatura" size="3" maxlength="3"> </label>
+	<label>Peso: <input type="number" name="peso" size="3" maxlength="3"> </label><br/>
+
+	<label>Estado Civil:</label> 
+	<label>Casado<input type="radio" name="Casado"> </label> 
+	<label>Soltero <input type="radio" name="soltero"> </label><br/>
+	<label>Dirección: <input type="text" name="direccion" size="50" maxlength="40"> </label>
+	<label>Código postal: <input type="text" name="cPostal" size="7" maxlength="7"> </label>
+	<label>Teléfono: <input type="text" name="nTelefono" size="10" maxlength="10"> </label><br/>
+
+	<label> Fecha de nacimiento: <input name= "fechaNac" type= "date" size="30"> </label> 
+	<label>Lugar de nacimiento: <input type="text" name="LugarNac" size="25" maxlength="30"> </label>
+	<label>Nacionalidad: <input type="text" name="nacionalidad" size="25" maxlength="30"> </label> <br/>
+
+	<label>Vive con:</label> 
+	<label>Sus padres <input type="radio" name="suspadres"> </label>
+	<label>Su familia<input type="radio" name="sufamilia"> </label>
+	<label>Solo<input type="radio" name="solo"> </label><br/>
+
+	<label>Clave ISSEMYM: <input type="number" name="clave" size="10"> </label>
+	<label>Correo electronico <input type="text" name="celectronico" size="50"> </label><br/>
+	<label>Tiene licencia de manejo</label> 
+	<label>Si<input type="radio" name="Casado"> </label> 
+	<label>No<input type="radio" name="soltero"> </label>
+	<label>Registro Federal de Contribuyentes:<input type="number" name="registro" size="15"> </label><br/>
+	<label>¿Como considera su estado de salud actual?</label> <br/>
+	<label>Bueno<input type="radio" name="bueno"> </label> 
+	<label>Regular<input type="radio" name="regular"> </label>
+	<label>Malo<input type="radio" name="malo"> </label><br/>
+
+	<label>¿Padese alguna enfermedad crónica?</label> <br/>
+	<label>Si<input type="radio" name="si"> </label> 
+	<label>No<input type="radio" name="no"> </label>
+	<label>¿Cúal?: <input type="text" name="cual" size="10"> </label>
+
+</p>
+</body>
+
+</html>
