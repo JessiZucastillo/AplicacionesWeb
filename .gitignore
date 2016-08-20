@@ -1,3 +1,4 @@
+githubcommands.txt
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -27,6 +28,7 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+
 
 # Thumbnails
 ._*
