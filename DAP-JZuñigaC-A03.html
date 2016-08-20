@@ -7,7 +7,21 @@
 	<!-- Haciendo el Documento Responsivo -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<style type="text/css"> 
+<style type="text/css">
+    table{
+      width: 100%;
+      height: 100%;
+      border:1px solid gray;
+      border-spacing:0;
+    }
+    table tr td,th{
+      border:1px solid gray;
+      padding: 0;
+      margin: 0;
+    }
+    .text-center{
+      text-align: center;
+    }
 
 body {
     background-color: DarkSalmon ;
@@ -16,7 +30,7 @@ body {
 h1 {
     color: white;
     text-align: center;
-   <--- font-family: arial; ---!>
+    font-family: arial;
 
 }
 
@@ -40,7 +54,7 @@ p {
 <h1>Solicitud de Empleo</h2>
 <form method = "post" action= "itesm.mx">
 <p>
-	<label text-align: rigth;> Fecha: <input name= "fecha" type= "date" size="30"> </label> <br/>
+	<label> Fecha: <input name= "fecha" type= "date" size="30"> </label> <br/>
 	<label>Puesto que solicita y turno de su interés: <input name= "pyt" type="text" size="30">
 	</label> <br/>
 	<label>Sueldo: <input name="sueldo" type="text" size="10" maxlength="10"></label>
@@ -50,43 +64,94 @@ p {
 	<label>Apellidos Paterno: <input type="text" name="aPaterno" size="25" maxlength="30"> </label>
 	<label>Materno: <input type="text" name="aMaterno" size="25" maxlength="30"> </label>
 	<label>Nombres: <input type="text" name="nombres" size="25" maxlength="30"> </label> <br/>
-	<label>Edad: <input type="number" name="edad" size="2" maxlength="2"> </label> 
+	<label>Edad: <input type="number" name="edad" size="2" maxlength="2"> </label>
 	<label>Estatura: <input type="number" name="estatura" size="3" maxlength="3"> </label>
 	<label>Peso: <input type="number" name="peso" size="3" maxlength="3"> </label><br/>
 
-	<label>Estado Civil:</label> 
-	<label>Casado<input type="radio" name="Casado"> </label> 
+	<label>Estado Civil:</label>
+	<label>Casado<input type="radio" name="Casado"> </label>
 	<label>Soltero <input type="radio" name="soltero"> </label><br/>
 	<label>Dirección: <input type="text" name="direccion" size="50" maxlength="40"> </label>
 	<label>Código postal: <input type="text" name="cPostal" size="7" maxlength="7"> </label>
 	<label>Teléfono: <input type="text" name="nTelefono" size="10" maxlength="10"> </label><br/>
 
-	<label> Fecha de nacimiento: <input name= "fechaNac" type= "date" size="30"> </label> 
+	<label> Fecha de nacimiento: <input name= "fechaNac" type= "date" size="30"> </label>
 	<label>Lugar de nacimiento: <input type="text" name="LugarNac" size="25" maxlength="30"> </label>
 	<label>Nacionalidad: <input type="text" name="nacionalidad" size="25" maxlength="30"> </label> <br/>
 
-	<label>Vive con:</label> 
+	<label>Vive con:</label>
 	<label>Sus padres <input type="radio" name="suspadres"> </label>
 	<label>Su familia<input type="radio" name="sufamilia"> </label>
 	<label>Solo<input type="radio" name="solo"> </label><br/>
 
 	<label>Clave ISSEMYM: <input type="number" name="clave" size="10"> </label>
 	<label>Correo electronico <input type="text" name="celectronico" size="50"> </label><br/>
-	<label>Tiene licencia de manejo</label> 
-	<label>Si<input type="radio" name="Casado"> </label> 
+	<label>Tiene licencia de manejo</label>
+	<label>Si<input type="radio" name="Casado"> </label>
 	<label>No<input type="radio" name="soltero"> </label>
 	<label>Registro Federal de Contribuyentes:<input type="number" name="registro" size="15"> </label><br/>
 	<label>¿Como considera su estado de salud actual?</label> <br/>
-	<label>Bueno<input type="radio" name="bueno"> </label> 
+	<label>Bueno<input type="radio" name="bueno"> </label>
 	<label>Regular<input type="radio" name="regular"> </label>
 	<label>Malo<input type="radio" name="malo"> </label><br/>
 
 	<label>¿Padese alguna enfermedad crónica?</label> <br/>
-	<label>Si<input type="radio" name="si"> </label> 
+	<label>Si<input type="radio" name="si"> </label>
 	<label>No<input type="radio" name="no"> </label>
-	<label>¿Cúal?: <input type="text" name="cual" size="10"> </label>
+	<label>¿Cúal?: <input type="text" name="cual" size="10"> </label><br/>
+
+	<label>¿Qué deporte práctica? <input type="text" name="deporte" size="15"> </label>
+	<label>¿Pertenece a algún club social o deportivo? </label>
+	<label>Si<input type="radio" name="af"> </label>
+	<label>No<input type="radio" name="neg"> </label><br/>
+	<label>¿Cúal es su pasatiempo favorito? <input type="text" name="pasatiempo" size="25" maxlength="30"> </label> <br/>
 
 </p>
+<h2>Datos Familiares</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Vive</th>
+        <th>Finado</th>
+        <th>Domicilio</th>
+        <th>Ocupación</th>
+      </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td rowspan="1" class="text-center">Padre</td>
+        <td class="text-center">  </td>
+          <td class="text-center"> </td>
+          <td class="text-center"></td>
+          <td class="text-center"> </td>
+
+      </tr>
+        <tr>
+        <td rowspan="1" class="text-center">Madre</td>
+        <td class="text-center">  </td>
+          <td class="text-center"> </td>
+          <td class="text-center"></td>
+          <td class="text-center"> </td>
+
+      </tr>
+        <tr>
+        <td rowspan="1" class="text-center">Esposa(o)</td>
+        <td class="text-center">  </td>
+          <td class="text-center"> </td>
+          <td class="text-center"></td>
+          <td class="text-center"> </td>
+
+      </tr>
+        <tr>
+        <td rowspan="1" class="text-center">Nombre de hija(o)</td>
+       <td class="text-center">  </td>
+          <td class="text-center"> </td>
+          <td class="text-center"></td>
+          <td class="text-center"> </td>
+
+      </tr>
+
 </body>
 
 </html>
